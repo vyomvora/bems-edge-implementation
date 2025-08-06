@@ -16,7 +16,7 @@ st.set_page_config(page_title="BEMS-Edge Dashboard", layout="wide")
 # Initialize Azure reader
 @st.cache_resource
 def init_azure_reader():
-    return AzureDataReader("HostName=edge-example-vyom.azure-devices.net;DeviceId=temperature-sensor-1;SharedAccessKey=bPIdPsEPsEvNTlU9NfyCc8e2Fo7QkpL4wU4XEzDAzjk=")
+    return AzureDataReader("connection_string")
 
 reader = init_azure_reader()
 
